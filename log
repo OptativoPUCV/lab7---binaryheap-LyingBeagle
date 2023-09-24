@@ -53,3 +53,20 @@ Sun 24 Sep 2023 10:23:36 PM UTC:
  tests:  2|2
 total_score: 20/70
 78a45e7
+Sun 24 Sep 2023 10:32:43 PM UTC: 
+ heap.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:35:74: error: expected ‘)’ before ‘;’ token
+   35 |       pq->heapArray = realloc(pq->heapArray, pq->capac * sizeof(heapElem);
+      |                              ~                                           ^
+      |                                                                          )
+heap.c:35:75: error: expected ‘;’ before ‘}’ token
+   35 |       pq->heapArray = realloc(pq->heapArray, pq->capac * sizeof(heapElem);
+      |                                                                           ^
+      |                                                                           ;
+   36 |     }
+      |     ~                                                                      
+Compilation failed
+5ed4ffe

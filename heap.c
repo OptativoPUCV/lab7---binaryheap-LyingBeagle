@@ -23,12 +23,25 @@ void* heap_top(Heap* pq){
         return NULL;
     }
 
-    return pq->heapArray[0].data;;
+    return pq->heapArray[0].data;
 }
 
 
 
 void heap_push(Heap* pq, void* data, int priority){
+
+    if(pq->size == pq->capac){
+      pq->capac = pq->capac * 2 + 1;
+      pq->heapArray = realloc(pq->heapArray, pq->capac * sizeof(heapElem);
+    }
+
+    heapElem nuevoElemento;
+    nuevoElemento.data = data;
+    nuevoElemento.priority = priority;
+  
+    int i = pq->size;
+    pq->heapArray[i] = nuevoElemento;
+    pq->size++;
 
 }
 
