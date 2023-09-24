@@ -17,3 +17,13 @@ heap.c:22:58: error: expected ‘:’ before ‘;’ token
       |                                                          ^
 Compilation failed
 3b30747
+Sun 24 Sep 2023 10:17:14 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_top’:
+heap.c:22:52: error: type mismatch in conditional expression
+   22 |     void* top = (pq->size != 0) ? pq->heapArray[0] : NULL;
+      |                                                    ^
+Compilation failed
+33adee5
