@@ -37,3 +37,13 @@ heap.c:26:17: error: incompatible types when initializing type ‘void *’ usin
       |                 ^~
 Compilation failed
 9a6e41e
+Sun 24 Sep 2023 10:21:16 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_top’:
+heap.c:26:5: error: cannot convert to a pointer type
+   26 |     void* top = (void*)pq->heapArray[0];
+      |     ^~~~
+Compilation failed
+fec6498
