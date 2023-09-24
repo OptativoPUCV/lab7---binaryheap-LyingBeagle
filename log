@@ -76,3 +76,9 @@ Sun 24 Sep 2023 10:33:44 PM UTC:
  tests:  3|2
 total_score: 25/70
 43d5f2f
+Sun 24 Sep 2023 10:37:33 PM UTC: 
+ heap.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+ tests:  3|2
+total_score: 25/70
+d2de2ad
