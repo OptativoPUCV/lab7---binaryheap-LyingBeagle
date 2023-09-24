@@ -99,3 +99,9 @@ heap.c:84:39: error: ‘i’ undeclared (first use in this function)
 heap.c:84:39: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 50c6267
+Sun 24 Sep 2023 10:48:29 PM UTC: 
+ heap.c | 20 ++++++++++++--------
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+ tests:  8|0
+total_score: 70/70
+2989def
